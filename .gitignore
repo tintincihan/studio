@@ -39,3 +39,15 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# ic calisma dosyalari (public depoya girmez)
+/.agents/
+/.kiro/
+/.claude/
+skills-lock.json
+
+# QA gelistirme artiklari
+qa-capture*.js
+qa_capture.py
+qa_whyus.py
+/public/qa-screenshots/

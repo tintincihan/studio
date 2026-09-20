@@ -1,26 +1,46 @@
 @import "tailwindcss";
 
+@theme {
+  /* Ege Kıyısı Renk Paleti */
+  --color-ege: #0096C7;
+  --color-ege-dark: #0077A8;
+  --color-deniz: #023E8A;
+  --color-kumsal: #FFF8F0;
+  --color-kumsal-dark: #F5EDE0;
+  --color-terracotta: #E07A5F;
+  --color-terracotta-dark: #C96649;
+  --color-zeytin: #52B788;
+  --color-metin: #1C1C1C;
+  --color-metin-hafif: #4A5568;
+
+  /* Fontlar */
+  --font-sans: var(--font-jakarta);
+  --font-mono: ui-monospace, monospace;
+}
+
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #FFF8F0;
+  --foreground: #1C1C1C;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+* {
+  box-sizing: border-box;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+html {
+  scroll-behavior: smooth;
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-jakarta), system-ui, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Seçim rengi */
+::selection {
+  background: #0096C7;
+  color: white;
 }
