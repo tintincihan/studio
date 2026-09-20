@@ -6,7 +6,6 @@ import Services from "@/components/Services";
 import VekaletnameProcess from "@/components/VekaletnameProcess";
 import ServiceAreas from "@/components/ServiceAreas";
 import WhyUs from "@/components/WhyUs";
-import Testimonials from "@/components/Testimonials";
 import FinalCTA from "@/components/FinalCTA";
 import Footer from "@/components/Footer";
 import WhatsAppButton from "@/components/WhatsAppButton";
@@ -23,7 +22,6 @@ export default function Home() {
         <VekaletnameProcess />
         <ServiceAreas />
         <WhyUs />
-        <Testimonials />
         <FinalCTA />
       </main>
       <Footer />
