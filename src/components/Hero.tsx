@@ -97,19 +97,44 @@ export default function Hero() {
             </a>
           </motion.div>
 
-          {/* Pullquote — sosyal kanıt */}
+          {/*
+            Hizmet vaadi — FIRMA_BILGI_KARTI.md hizmet kapsamından, belgelenebilir.
+
+            NOT: Burada daha önce uydurma bir müşteri yorumu duruyordu
+            ("— Mehmet K., Dardanos"), aynı metin Testimonials bileşeninde de vardı.
+            Belgelenemeyen tüketici tanıklığı yayınlanamaz (Ticari Reklam ve Haksız
+            Ticari Uygulamalar Yönetmeliği) — kullanıcı teyidiyle kaldırıldı
+            (2026-09-20). Gerçek referans toplandığında bu alana gelebilir.
+          */}
           <motion.div
             initial={{ opacity: 0, y: 16 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ type: "spring", stiffness: 80, damping: 20, delay: 0.8 }}
-            className="mt-8 flex items-center gap-3"
+            className="mt-8 flex items-start gap-3"
           >
-            <div className="w-9 h-9 rounded-full bg-white/20 flex items-center justify-center text-xs font-bold text-white flex-shrink-0">
-              MK
+            <div className="w-9 h-9 rounded-full bg-terracotta/20 flex items-center justify-center flex-shrink-0 mt-0.5">
+              <svg
+                width="18"
+                height="18"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                className="text-terracotta"
+                aria-hidden="true"
+              >
+                <path d="M23 7l-7 5 7 5V7z" />
+                <rect x="1" y="5" width="15" height="14" rx="2" ry="2" />
+              </svg>
             </div>
-            <p className="text-white/70 text-sm italic leading-snug">
-              &ldquo;Vekaletname aldı, 5 ay sonra anahtarı teslim etti. Hiç arama gerekmedi.&rdquo;
-              <span className="not-italic font-semibold text-white/90 ml-1">— Mehmet K., Dardanos</span>
+            <p className="text-white/70 text-sm leading-snug">
+              Vekâleti bırakın, altı mühendislik disiplininin tamamını tek elden
+              yürütelim.
+              <span className="font-semibold text-white/90 ml-1">
+                İnşaatınızı 7/24 canlı kameradan kendiniz izleyin.
+              </span>
             </p>
           </motion.div>
 
