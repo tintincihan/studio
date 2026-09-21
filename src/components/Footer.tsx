@@ -103,6 +103,13 @@ export default function Footer() {
           <p className="text-xs text-white/35">
             © {new Date().getFullYear()} Cihan Tintin Mimarlık Mühendislik Gayrimenkul İnşaat San. ve Tic. Ltd. Şti.
             Tüm hakları saklıdır.
+            <span className="mx-2 text-white/20">·</span>
+            <a
+              href="/gizlilik"
+              className="text-white/55 hover:text-white underline underline-offset-2 transition-colors"
+            >
+              Gizlilik ve KVKK
+            </a>
           </p>
           <div className="flex items-center gap-2 text-xs text-white/35">
             <span>Alt marka:</span>

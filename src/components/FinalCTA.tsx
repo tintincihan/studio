@@ -252,7 +252,14 @@ export default function FinalCTA() {
                   )}
                 </button>
                 <p className="text-center text-xs text-metin-hafif">
-                  Bilgileriniz yalnızca sizinle iletişim için kullanılır.
+                  Yazdıklarınız sunucumuzda saklanmaz; WhatsApp mesajı olarak
+                  hazırlanır, göndermeye siz karar verirsiniz.{" "}
+                  <a
+                    href="/gizlilik"
+                    className="text-ege font-medium hover:underline"
+                  >
+                    Gizlilik ve KVKK
+                  </a>
                 </p>
               </form>
             )}
