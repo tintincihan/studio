@@ -19,25 +19,41 @@ export default function FinalCTA() {
   const [loading, setLoading] = useState(false);
   const [form, setForm] = useState({ name: "", phone: "", message: "" });
 
+  const WHATSAPP = "905326348664";
+
+  /**
+   * Formu WhatsApp'a devreder.
+   *
+   * NEDEN: 2026-09-21'de yapılan canlı testte form uç noktası
+   * (`formspree.io/f/xdkobqvw`) `404 FORM_NOT_FOUND` döndü — o kimlikte bir form
+   * hiç var olmamış. Eski kodda `catch` yalnızca AĞ hatasında çalıştığı için 404
+   * sessizce yutuluyordu: ziyaretçi "Gönder"e basıyor, hiçbir şey olmuyor, talep
+   * kayboluyordu. Gerçek bir arka uç bağlanana kadar talep WhatsApp'a taşınır;
+   * bağlandığında `gonderimYolu` içine fetch geri konur ve hata dalı yine
+   * WhatsApp'a düşmeye devam eder.
+   */
+  const whatsappaDevret = () => {
+    const satirlar = [
+      "Merhaba, web sitenizden yazıyorum.",
+      form.name && `Ad Soyad: ${form.name}`,
+      form.phone && `Telefon: ${form.phone}`,
+      selected && `Konu: ${selected}`,
+      form.message && `Not: ${form.message}`,
+    ].filter(Boolean);
+
+    window.open(
+      `https://wa.me/${WHATSAPP}?text=${encodeURIComponent(satirlar.join("\n"))}`,
+      "_blank",
+      "noopener,noreferrer",
+    );
+  };
+
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setLoading(true);
     try {
-      const res = await fetch("https://formspree.io/f/xdkobqvw", {
-        method: "POST",
-        headers: { "Content-Type": "application/json", "Accept": "application/json" },
-        body: JSON.stringify({
-          name: form.name,
-          phone: form.phone,
-          topic: selected,
-          message: form.message,
-          _replyto: "cihantintin@gmail.com",
-        }),
-      });
-      if (res.ok) setSent(true);
-    } catch {
-      // WhatsApp fallback
-      window.open("https://wa.me/905326348664", "_blank");
+      whatsappaDevret();
+      setSent(true);
     } finally {
       setLoading(false);
     }
@@ -134,8 +150,24 @@ export default function FinalCTA() {
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                   </svg>
                 </div>
-                <h3 className="text-xl font-bold text-deniz mb-2">Mesajınız Ulaştı!</h3>
-                <p className="text-metin-hafif">En kısa sürede size dönüş yapacağız.</p>
+                <h3 className="text-xl font-bold text-deniz mb-2">
+                  WhatsApp&apos;a Yönlendirdik
+                </h3>
+                <p className="text-metin-hafif">
+                  Yazdıklarınız hazır bir mesaj hâline getirildi — WhatsApp penceresinden
+                  <strong className="text-metin"> göndermeniz yeterli.</strong>
+                </p>
+                <p className="text-metin-hafif text-sm mt-3">
+                  Pencere açılmadıysa doğrudan arayabilirsiniz:{" "}
+                  <a
+                    href={`https://wa.me/${WHATSAPP}`}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="font-semibold text-ege hover:underline"
+                  >
+                    0532 634 86 64
+                  </a>
+                </p>
               </div>
             ) : (
               <form onSubmit={handleSubmit} className="flex flex-col gap-4">
@@ -208,11 +240,11 @@ export default function FinalCTA() {
                       <svg className="w-4 h-4 animate-spin" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" />
                       </svg>
-                      Gönderiliyor...
+                      WhatsApp açılıyor...
                     </>
                   ) : (
                     <>
-                      15 Dakikalık Ücretsiz Görüşme Al
+                      WhatsApp&apos;tan Ücretsiz Görüşme Al
                       <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
                       </svg>
