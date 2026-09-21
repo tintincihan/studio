@@ -46,8 +46,8 @@ const reasons = [
   },
   {
     n: "05",
-    title: "Türkiye'de Nadir: 6 Disiplin Tek Çatı Altında",
-    desc: "Mimarlık, Statik, Elektrik, Mekanik, Zemin Etüdü ve Harita Mühendisliği aynı ofiste, aynı ekipte. Koordinasyon sorunu yok, fiyat sürprizi yok.",
+    title: "Altı İmza Yerine Tek İmza",
+    desc: "Mimari, statik, elektrik, mekanik, zemin etüdü ve harita — altısı da aynı ofiste, aynı ekipte. Büroları siz koordine etmezsiniz; aralarındaki gecikme ve \"o kısım bizden değil\" tartışması size yansımaz.",
     icon: (
       <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z" />
@@ -56,8 +56,8 @@ const reasons = [
   },
   {
     n: "06",
-    title: "Çanakkale Kıyısında Boş Bırakmadığımız Alan Yok",
-    desc: "Dardanos–Assos–Geyikli kıyı kuşağını dijital ve sahada en iyi bilen firmayız. Bu bölgelerde uzman rakip firma bulmak neredeyse imkansız.",
+    title: "Kıyı Şeridinin Kendine Has Kuralları",
+    desc: "Dardanos, Güzelyalı, Geyikli, Assos–Behramkale, Ezine, Ayvacık. Her birinin kendi imar durumu, zemini ve ruhsat mercii var — kimi belediyede, kimi İl Özel İdaresi'nde. Bu ayrımı başında bilmek, dosyanın kaç ay süreceğini belirler.",
     icon: (
       <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />

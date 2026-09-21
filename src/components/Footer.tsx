@@ -42,9 +42,9 @@ export default function Footer() {
               </span>
             </div>
             <p className="text-white/55 text-sm leading-relaxed mb-5 max-w-xs">
-              Mimarlık, mühendislik ve gayrimenkul hizmetlerini tek çatı altında
-              toplayan Çanakkale'nin lider firması. Vekaletname sistemiyle gerçek
-              anlamda tek muhatap deneyimi sunuyoruz.
+              Mimarlık, mühendislik ve gayrimenkul hizmetleri tek çatı altında.
+              Vekâletnamenizi bırakın; arsadan anahtar teslimine kadar tek bir
+              muhatapla ilerleyin, inşaatınızı 7/24 canlı kameradan kendiniz izleyin.
             </p>
             <p className="text-ege font-semibold text-sm italic">
               "Çanakkale'de Yapanın Adresi."
