@@ -67,6 +67,8 @@ export default function GizlilikPage() {
               <p className="text-sm text-metin-hafif">
                 İsmetpaşa Mah. İleri Sk. No:15/1 Merkez / Çanakkale
                 <br />
+                Çanakkale Vergi Dairesi · VKN: 6311332207
+                <br />
                 Telefon: 0286 212 68 78 · 0532 634 86 64
                 <br />
                 E-posta:{" "}

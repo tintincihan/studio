@@ -62,6 +62,22 @@ export default function Footer() {
                 </a>
               </li>
               <li>
+                <a href="tel:+902862126878" className="text-sm text-white/60 hover:text-white transition-colors flex items-center gap-2">
+                  <svg className="w-4 h-4 text-ege" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M8 7V3m8 4V3M4 11h16M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" /></svg>
+                  0286 212 68 78
+                </a>
+              </li>
+              <li>
+                <span className="text-sm text-white/60 flex items-start gap-2">
+                  <svg className="w-4 h-4 text-ege flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M17.657 16.657L13.414 20.9a2 2 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" /><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" /></svg>
+                  <span className="leading-relaxed">
+                    İsmetpaşa Mah. İleri Sk. No:15/1
+                    <br />
+                    Merkez / Çanakkale
+                  </span>
+                </span>
+              </li>
+              <li>
                 <a href="mailto:cihantintin@gmail.com" className="text-sm text-white/60 hover:text-white transition-colors flex items-center gap-2">
                   <svg className="w-4 h-4 text-ege" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" /></svg>
                   cihantintin@gmail.com
@@ -98,22 +114,40 @@ export default function Footer() {
           ))}
         </div>
 
-        {/* Alt bant */}
-        <div className="border-t border-white/10 pt-8 flex flex-col sm:flex-row items-center justify-between gap-4">
-          <p className="text-xs text-white/35">
-            © {new Date().getFullYear()} Cihan Tintin Mimarlık Mühendislik Gayrimenkul İnşaat San. ve Tic. Ltd. Şti.
-            Tüm hakları saklıdır.
-            <span className="mx-2 text-white/20">·</span>
-            <a
-              href="/gizlilik"
-              className="text-white/55 hover:text-white underline underline-offset-2 transition-colors"
-            >
-              Gizlilik ve KVKK
-            </a>
-          </p>
-          <div className="flex items-center gap-2 text-xs text-white/35">
-            <span>Alt marka:</span>
-            <span className="text-zeytin font-semibold">Tinvestin Gayrimenkul</span>
+        {/*
+          Yasal künye — tam ticaret ünvanı, adres ve vergi kimlik numarası.
+          Kaynak: bilgi/FIRMA_BILGI_KARTI.md (kullanıcı teyidi 2026-09-22).
+          Künye bilgisi tahmin edilmez; değişirse önce bilgi kartı güncellenir.
+        */}
+        <div className="border-t border-white/10 pt-8">
+          <div className="mb-6 text-xs text-white/40 leading-relaxed">
+            <p className="font-semibold text-white/60 uppercase tracking-wide mb-1.5">
+              CİHAN TİNTİN MİMARLIK MÜHENDİSLİK GAYRİMENKUL İNŞAAT SANAYİ VE
+              TİCARET LİMİTED ŞİRKETİ
+            </p>
+            <p>İsmetpaşa Mah. İleri Sk. No:15/1 Merkez / Çanakkale</p>
+            <p>
+              Vergi Dairesi: Çanakkale
+              <span className="mx-1.5 text-white/20">·</span>
+              VKN: 6311332207
+            </p>
+          </div>
+
+          <div className="flex flex-col sm:flex-row items-center justify-between gap-4">
+            <p className="text-xs text-white/35">
+              © {new Date().getFullYear()} Tüm hakları saklıdır.
+              <span className="mx-2 text-white/20">·</span>
+              <a
+                href="/gizlilik"
+                className="text-white/55 hover:text-white underline underline-offset-2 transition-colors"
+              >
+                Gizlilik ve KVKK
+              </a>
+            </p>
+            <div className="flex items-center gap-2 text-xs text-white/35">
+              <span>Alt marka:</span>
+              <span className="text-zeytin font-semibold">Tinvestin Gayrimenkul</span>
+            </div>
           </div>
         </div>
       </div>

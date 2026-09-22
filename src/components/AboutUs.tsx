@@ -80,27 +80,6 @@ const certificates = [
   },
 ];
 
-const team = [
-  {
-    name: "Cihan Tintin",
-    role: "Ofis Sahibi & Mimar",
-    initials: "CT",
-    color: "bg-deniz",
-  },
-  {
-    name: "Murat Akdeniz",
-    role: "Gayrimenkul Danışmanı",
-    initials: "MA",
-    color: "bg-ege",
-  },
-  {
-    name: "Ömer Ali Esen",
-    role: "Gayrimenkul Danışmanı",
-    initials: "ÖE",
-    color: "bg-terracotta",
-  },
-];
-
 export default function AboutUs() {
   const ref = useRef(null);
   const inView = useInView(ref, { once: true, margin: "-80px" });
@@ -197,35 +176,12 @@ export default function AboutUs() {
           </motion.div>
         </div>
 
-        {/* Alt kısım: Ekip Kartları */}
-        <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          animate={inView ? { opacity: 1, y: 0 } : {}}
-          transition={{ duration: 0.6, delay: 0.4 }}
-        >
-          <h3 className="text-xl font-bold text-deniz text-center mb-8">
-            Tinvestin Ekibi
-          </h3>
-          <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 max-w-3xl mx-auto">
-            {team.map((member, i) => (
-              <motion.div
-                key={i}
-                initial={{ opacity: 0, y: 20 }}
-                animate={inView ? { opacity: 1, y: 0 } : {}}
-                transition={{ duration: 0.5, delay: 0.5 + i * 0.1 }}
-                className="bg-white rounded-2xl p-6 text-center shadow-sm hover:shadow-md transition-shadow duration-200 border border-kumsal group"
-              >
-                <div
-                  className={`w-16 h-16 rounded-full ${member.color} text-white font-bold text-lg flex items-center justify-center mx-auto mb-4 group-hover:scale-105 transition-transform duration-200`}
-                >
-                  {member.initials}
-                </div>
-                <h4 className="font-bold text-deniz text-sm mb-1">{member.name}</h4>
-                <p className="text-metin-hafif text-xs leading-relaxed">{member.role}</p>
-              </motion.div>
-            ))}
-          </div>
-        </motion.div>
+        {/*
+          "Tinvestin Ekibi" kart bölümü kaldırıldı (kullanıcı kararı, 2026-09-22).
+          Üç danışman kartı gayrimenkul/Tinvestin tarafına aitti; bu site yapım işi
+          ve ruhsat taahhüdünü anlatıyor, ekip vitrini konuyu dağıtıyordu.
+          Kartlarda geçen kişi adları da siteden çıkmış oldu.
+        */}
       </div>
     </section>
   );
