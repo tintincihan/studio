@@ -146,7 +146,20 @@ export default function Footer() {
             </p>
             <div className="flex items-center gap-2 text-xs text-white/35">
               <span>Alt marka:</span>
-              <span className="text-zeytin font-semibold">Tinvestin Gayrimenkul</span>
+              {/*
+                tinvestin.com, meta-refresh ile https://tinvestin.sahibinden.com/
+                adresine yönleniyor (mağaza sayfası).
+                ⚠️ Adresin kendi SSL sertifikası YOK — bu yüzden link http://.
+                Sertifika alındığında burası https:// yapılmalı.
+              */}
+              <a
+                href="http://www.tinvestin.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-zeytin font-semibold hover:text-white underline underline-offset-2 transition-colors"
+              >
+                Tinvestin Gayrimenkul
+              </a>
             </div>
           </div>
         </div>
