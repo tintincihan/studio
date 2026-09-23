@@ -7,7 +7,7 @@ const reasons = [
   {
     n: "01",
     title: "İl Özel İdaresi'ni İçeriden Bilen Ekip",
-    desc: "Cihan Tintin, Çanakkale İl Özel İdaresi İmar Müdürlüğü'nde 5 yıl bizzat çalıştı. Dosyanızın hangi masadan nasıl geçeceğini bilmek aylar kazandırır — bu bilgiyi başka firmada bulamazsınız.",
+    desc: "Cihan Tintin, Çanakkale İl Özel İdaresi İmar Müdürlüğü'nde 5 yıl bizzat çalıştı. Bir dosyanın hangi aşamada, hangi eksik yüzünden geri döndüğünü içeriden gördü — başvurunuz o eksiklerle yola çıkmaz.",
     icon: (
       <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
@@ -26,7 +26,7 @@ const reasons = [
   },
   {
     n: "03",
-    title: "Devlet Tarafından Tercih Edilen Firma",
+    title: "Kamu Kurumuyla Tamamlanmış Sözleşme",
     desc: "Haziran 2025'te Çanakkale'de bir kamu kurumu Kentsel Dönüşüm hizmeti için doğrudan bu firmayı seçti ve proje başarıyla tamamlandı. EKAP (Kamu İhale Platformu) kayıtlı resmi sözleşme.",
     icon: (
       <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -36,16 +36,6 @@ const reasons = [
   },
   {
     n: "04",
-    title: "Endeksa Platinum & MYK Seviye 5 Belgeli",
-    desc: "Türkiye'nin önde gelen gayrimenkul platformu Endeksa'da PLATINUM danışman rozeti. Devlet onaylı MYK Seviye 5 Sorumlu Emlak Danışmanlığı belgesi. Yetkili, sertifikalı, güvenilir.",
-    icon: (
-      <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z" />
-      </svg>
-    ),
-  },
-  {
-    n: "05",
     title: "Altı İmza Yerine Tek İmza",
     desc: "Mimari, statik, elektrik, mekanik, zemin etüdü ve harita — altısı da aynı ofiste, aynı ekipte. Büroları siz koordine etmezsiniz; aralarındaki gecikme ve \"o kısım bizden değil\" tartışması size yansımaz.",
     icon: (
@@ -55,7 +45,7 @@ const reasons = [
     ),
   },
   {
-    n: "06",
+    n: "05",
     title: "Kıyı Şeridinin Kendine Has Kuralları",
     desc: "Dardanos, Güzelyalı, Geyikli, Assos–Behramkale, Ezine, Ayvacık. Her birinin kendi imar durumu, zemini ve ruhsat mercii var — kimi belediyede, kimi İl Özel İdaresi'nde. Bu ayrımı başında bilmek, dosyanın kaç ay süreceğini belirler.",
     icon: (
@@ -66,7 +56,7 @@ const reasons = [
     ),
   },
   {
-    n: "07",
+    n: "06",
     title: "Arsa'dan Satışa Tam Ekosistem",
     desc: "Tinvestin Gayrimenkul ile arsa bulma, Cihan Tintin Mimarlık ile proje ve inşaat, sonrasında yeniden Tinvestin ile satış veya kiralama — döngü tamamen kapalı.",
     icon: (
@@ -100,9 +90,9 @@ export default function WhyUs() {
               <span className="text-terracotta">Yapıda</span>
             </h2>
             <p className="text-metin-hafif leading-relaxed mb-8">
-              Çanakkale'de onlarca firma var. Ama aynı çatı altında 6 mühendislik
-              disiplini, İl Özel İdaresi deneyimi ve kıyı bölgelerini sahada bilen
-              tek ekip biziz.
+              Çanakkale'de onlarca firma var. Bizi ayıran söz değil, işleyiş:
+              altı mühendislik disiplini tek elden, İl Özel İdaresi'ni içeriden
+              bilen deneyim ve kıyı bölgelerinin kurallarına saha bilgisi.
             </p>
             <a
               href="#iletisim"

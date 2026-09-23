@@ -83,8 +83,8 @@ export default function ServiceAreas() {
             <span className="text-ege">Avucumuzun İçi Gibi</span> Biliriz
           </h2>
           <p className="text-metin-hafif text-lg max-w-2xl mx-auto">
-            Dardanos'tan Ayvacık'a uzanan kıyı kuşağında onlarca proje teslim ettik — her
-            bölgenin imar koşullarını, zemin özelliklerini ve kurum süreçlerini bizzat biliriz.
+            Dardanos'tan Ayvacık'a uzanan kıyı kuşağında çalışıyoruz — her bölgenin imar
+            koşullarını, zemin özelliklerini ve ruhsatın hangi kurumda yürüdüğünü sahada öğrendik.
           </p>
         </motion.div>
 
