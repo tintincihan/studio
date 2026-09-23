@@ -36,50 +36,6 @@ const timeline = [
   },
 ];
 
-const certificates = [
-  {
-    title: "Taşınmaz Ticareti Yetki Belgesi",
-    issuer: "Çanakkale Valiliği",
-    year: "2024",
-    icon: (
-      <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z" />
-      </svg>
-    ),
-  },
-  {
-    title: "MYK Seviye 5 Sorumlu Emlak Danışmanı",
-    issuer: "Mesleki Yeterlilik Kurumu",
-    year: "2022",
-    icon: (
-      <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z" />
-      </svg>
-    ),
-  },
-  {
-    title: "Emlak Danışmanlığı Sertifikası",
-    issuer: "İstanbul Esenyurt Üniversitesi",
-    year: "2022",
-    icon: (
-      <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M12 14l9-5-9-5-9 5 9 5z" />
-        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z" />
-      </svg>
-    ),
-  },
-  {
-    title: "Emlak Danışmanlığı Sertifikası",
-    issuer: "Milli Eğitim Bakanlığı (MEB)",
-    year: "2017",
-    icon: (
-      <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
-      </svg>
-    ),
-  },
-];
-
 export default function AboutUs() {
   const ref = useRef(null);
   const inView = useInView(ref, { once: true, margin: "-80px" });
@@ -106,12 +62,19 @@ export default function AboutUs() {
           </p>
         </motion.div>
 
-        {/* Ana içerik: Timeline + Sertifikalar */}
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 mb-16">
-          {/* Sol: Kariyer Zaman Çizelgesi */}
+        {/*
+          Ana içerik: yalnız kariyer zaman çizelgesi.
+          "Yetki Belgeleri & Sertifikalar" kartları kaldırıldı (kullanıcı kararı,
+          2026-09-23): dördü de emlak belgesiydi (taşınmaz ticareti, MYK emlak,
+          iki emlak danışmanlığı sertifikası). Bu site yapım işi ve ruhsatı anlatıyor;
+          ekip kartlarıyla aynı gerekçe. Yerine bir şey konmadı.
+          "5 Yıl — İl Özel İdaresi" satırı kullanıcı teyidiyle olduğu gibi kalır;
+          yıl aralığı bilinçli olarak YAZILMAZ.
+        */}
+        <div className="max-w-2xl mx-auto mb-16">
           <motion.div
-            initial={{ opacity: 0, x: -30 }}
-            animate={inView ? { opacity: 1, x: 0 } : {}}
+            initial={{ opacity: 0, y: 24 }}
+            animate={inView ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 0.6, delay: 0.1 }}
           >
             <h3 className="text-xl font-bold text-deniz mb-8">Kariyer Zaman Çizelgesi</h3>
@@ -143,35 +106,6 @@ export default function AboutUs() {
                   </motion.div>
                 ))}
               </div>
-            </div>
-          </motion.div>
-
-          {/* Sağ: Sertifika Kartları */}
-          <motion.div
-            initial={{ opacity: 0, x: 30 }}
-            animate={inView ? { opacity: 1, x: 0 } : {}}
-            transition={{ duration: 0.6, delay: 0.15 }}
-          >
-            <h3 className="text-xl font-bold text-deniz mb-8">Yetki Belgeleri & Sertifikalar</h3>
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-              {certificates.map((cert, i) => (
-                <motion.div
-                  key={i}
-                  initial={{ opacity: 0, y: 20 }}
-                  animate={inView ? { opacity: 1, y: 0 } : {}}
-                  transition={{ duration: 0.5, delay: 0.25 + i * 0.08 }}
-                  className="bg-white rounded-2xl p-5 shadow-sm hover:shadow-md transition-shadow duration-200 border border-kumsal"
-                >
-                  <div className="w-10 h-10 rounded-xl bg-kumsal text-ege flex items-center justify-center mb-3">
-                    {cert.icon}
-                  </div>
-                  <h4 className="font-bold text-deniz text-sm leading-snug mb-1">{cert.title}</h4>
-                  <p className="text-metin-hafif text-xs">{cert.issuer}</p>
-                  <span className="inline-block mt-2 text-xs font-semibold text-terracotta bg-terracotta/10 px-2.5 py-0.5 rounded-full">
-                    {cert.year}
-                  </span>
-                </motion.div>
-              ))}
             </div>
           </motion.div>
         </div>
