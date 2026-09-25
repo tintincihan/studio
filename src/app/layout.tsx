@@ -11,7 +11,7 @@ const jakarta = Plus_Jakarta_Sans({
 export const metadata: Metadata = {
   title: "Cihan Tintin Mimarlık Mühendislik | Çanakkale Villa İnşaatı & Ruhsat — Tek Muhatap",
   description:
-    "Çanakkale Ege kıyısında (Dardanos, Assos, Geyikli) villa inşaatı ve yapı ruhsatı. 6 mühendislik disiplini tek çatıda, vekaletname sistemiyle tam süreç yönetimi. İl Özel İdaresi uzmanı ekip. Ücretsiz keşif görüşmesi alın.",
+    "Çanakkale Ege kıyısında (Dardanos, Assos, Geyikli) villa inşaatı ve yapı ruhsatı. 6 mühendislik disiplini tek muhataptan, vekaletname sistemiyle tam süreç yönetimi. İl Özel İdaresi deneyimi. Ücretsiz keşif görüşmesi alın.",
   keywords: [
     "Çanakkale villa inşaatı",
     "yapı ruhsat projesi Çanakkale",
@@ -27,7 +27,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Cihan Tintin Mimarlık — Vekaletnameyi Verin, Gerisini Biz Halledelim",
     description:
-      "Çanakkale kıyısında villa inşaatı, ruhsat, kentsel dönüşüm. 6 mühendislik disiplini tek çatıda. İl Özel İdaresi uzmanı ekip. Ücretsiz görüşme alın.",
+      "Çanakkale kıyısında villa inşaatı, ruhsat, kentsel dönüşüm. 6 mühendislik disiplini tek muhataptan. İl Özel İdaresi deneyimi. Ücretsiz görüşme alın.",
     locale: "tr_TR",
     type: "website",
   },

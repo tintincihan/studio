@@ -58,7 +58,7 @@ const services = [
     ),
     title: "Binanız Riskli mi? 6306 Uzmanı Yanınızda",
     description:
-      "Çevre Bakanlığı lisanslı kentsel dönüşüm hizmetleri — sadece bürokratik bir süreç değil, binanızı yeniden değerlendirme fırsatı. Risk tespitinden yıkım ve yeniden yapıma 6306 Kanunu'nun tüm adımlarını biz biliriz.",
+      "Risk tespiti Bakanlık lisanslı kuruluşla yapılır; sözleşme ve sorumluluk tek adreste, bizde. Sadece bürokratik bir süreç değil, binanızı yeniden değerlendirme fırsatı — risk tespitinden yıkım ve yeniden yapıma 6306 sürecini baştan sona yürütürüz.",
     cta: "Binamı Değerlendirin",
     href: "#iletisim",
     tag: "Kentsel Dönüşüm",

@@ -17,7 +17,7 @@ const steps = [
   {
     n: "03",
     title: "Proje Hazırlığı — 6 Disiplin",
-    desc: "Mimari, Statik, Elektrik, Mekanik, Zemin Etüdü ve Harita projelerini kendi ekibimizle paralel olarak hazırlarız.",
+    desc: "Mimari, Statik, Elektrik, Mekanik, Zemin Etüdü ve Harita projelerini çözüm ortaklarımızla paralel olarak hazırlar, tek dosyada birleştiririz.",
   },
   {
     n: "04",
@@ -27,7 +27,7 @@ const steps = [
   {
     n: "05",
     title: "Ruhsat Teslimi & İnşaat",
-    desc: "Ruhsat çıktığında sizi bilgilendirir; isterseniz inşaat taahhüt sürecini de aynı ekiple devam ettiririz.",
+    desc: "Ruhsat çıktığında sizi bilgilendirir; isterseniz inşaat taahhüt sürecini de aynı muhatapla sürdürürüz.",
   },
 ];
 

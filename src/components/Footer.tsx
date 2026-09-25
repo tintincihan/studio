@@ -42,7 +42,7 @@ export default function Footer() {
               </span>
             </div>
             <p className="text-white/55 text-sm leading-relaxed mb-5 max-w-xs">
-              Mimarlık, mühendislik ve gayrimenkul hizmetleri tek çatı altında.
+              Mimarlık, mühendislik ve gayrimenkul hizmetleri tek muhataptan.
               Vekâletnamenizi bırakın; arsadan anahtar teslimine kadar tek bir
               muhatapla ilerleyin, inşaatınızı 7/24 canlı kameradan kendiniz izleyin.
             </p>

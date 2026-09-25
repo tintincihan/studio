@@ -62,7 +62,7 @@ export default function Hero() {
             transition={{ type: "spring", stiffness: 80, damping: 20, delay: 0.5 }}
             className="text-lg sm:text-xl text-white/85 leading-relaxed mb-10 max-w-2xl"
           >
-            Mimari, Statik, Elektrik, Mekanik, Zemin ve Harita — hepsi bünyemizde.
+            Mimari, Statik, Elektrik, Mekanik, Zemin ve Harita — hepsi tek muhataptan.
             Siz vekaletname verirsiniz, dosyanız İl Özel İdaresi&apos;nden çıkana kadar
             biz takip ederiz.{" "}
             <strong className="text-white font-semibold">Bir kez bile randevuya gelmek zorunda kalmayabilirsiniz.</strong>

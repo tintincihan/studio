@@ -21,7 +21,7 @@ const pillars = [
       "Ayrı ayrı büro gezmek yok. Vekâleti bırakın, süreci baştan sona biz yürütelim.",
   },
   {
-    title: "Altı mühendislik disiplini tek çatıda",
+    title: "Altı mühendislik disiplini tek elden",
     detail: "Mimari · Statik · Mekanik · Elektrik · Zemin etüdü · Harita",
   },
   {

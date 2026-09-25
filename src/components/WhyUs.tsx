@@ -17,7 +17,7 @@ const reasons = [
   {
     n: "02",
     title: "Vekaletname Sistemi — Gerçekten Tek Muhatap",
-    desc: "Pek çok firma \"tek muhatap\" der ama dışarıdan taşeron koordinasyonu yapar. Bizde tüm disiplinler bünyemizde; vekaletname verdiğinizde gerçekten aradan çıkabilirsiniz.",
+    desc: "Proje disiplinlerini uzun süredir birlikte çalıştığımız çözüm ortaklarıyla yürütüyoruz; ama sözleşme, sorumluluk ve iletişim tek adreste — bizde. Vekâletname verdiğinizde gerçekten aradan çıkabilirsiniz.",
     icon: (
       <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M15 7a2 2 0 012 2m4 0a6 6 0 01-7.743 5.743L11 17H9v2H7v2H4a1 1 0 01-1-1v-2.586a1 1 0 01.293-.707l5.964-5.964A6 6 0 1121 9z" />
@@ -37,7 +37,7 @@ const reasons = [
   {
     n: "04",
     title: "Altı İmza Yerine Tek İmza",
-    desc: "Mimari, statik, elektrik, mekanik, zemin etüdü ve harita — altısı da aynı ofiste, aynı ekipte. Büroları siz koordine etmezsiniz; aralarındaki gecikme ve \"o kısım bizden değil\" tartışması size yansımaz.",
+    desc: "Mimari, statik, elektrik, mekanik, zemin etüdü ve harita — altısını da biz koordine ederiz. Büroları tek tek siz aramazsınız; aralarındaki gecikme ve \"o kısım bizden değil\" tartışması size yansımaz.",
     icon: (
       <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z" />
