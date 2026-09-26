@@ -39,8 +39,8 @@ export const metadata: Metadata = {
     images: [{ url: "/og.png", width: 1200, height: 630, alt: "Cihan Tintin Mimarlık Mühendislik — Çanakkale" }],
   },
   twitter: { card: "summary_large_image", images: ["/og.png"] },
-  // Google Search Console doğrulama kodu buraya gelecek:
-  // verification: { google: "..." },
+  // Google Search Console: cihantintin@gmail.com hesabı, HTML DOSYASI yöntemiyle doğrulandı
+  // (public/google3c230049980a52f5.html — SİLİNMEZ). Meta etiketi gerekmiyor.
 };
 
 export default function RootLayout({
