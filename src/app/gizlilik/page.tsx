@@ -19,6 +19,7 @@ export const metadata: Metadata = {
   description:
     "Cihan Tintin Mimarlık Mühendislik olarak kişisel verilerinizi nasıl işlediğimize dair KVKK aydınlatma metni.",
   robots: { index: true, follow: true },
+  alternates: { canonical: "/gizlilik" },
 };
 
 const guncelleme = "22 Eylül 2026";
