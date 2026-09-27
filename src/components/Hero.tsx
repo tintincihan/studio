@@ -149,7 +149,7 @@ export default function Hero() {
               "6 Mühendislik Disiplini",
               "Vekaletname Sistemi",
               "İl Özel İdaresi Uzmanı",
-              "Bakanlık Lisanslı Kentsel Dönüşüm",
+              "Kentsel Dönüşüm Süreç Yönetimi",
             ].map((item) => (
               <span key={item} className="flex items-center gap-2 text-white/70 text-sm">
                 <svg className="w-4 h-4 text-zeytin flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
