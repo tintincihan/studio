@@ -43,10 +43,10 @@ const services = [
     ),
     title: "Çanakkale'de Doğru Arsa, Doğru Yatırım",
     description:
-      "İmar durumu belirsiz arsalara para yakmak yerine, inşaat değerini bilen gözlerle arsa ve konut alın. Tinvestin olarak satış, kiralama ve yatırım danışmanlığı yapıyor; teknik ön değerlendirmeyi birlikte sunuyoruz.",
+      "İmar durumu belirsiz arsalara para yakmak yerine, inşaat değerini bilen gözlerle arsa ve konut alın. Gayrimenkul markamız Tinvestin Gayrimenkul ile satış, kiralama ve yatırım danışmanlığı yapıyor; teknik ön değerlendirmeyi birlikte sunuyoruz.",
     cta: "Portföyü İncele",
     href: "#iletisim",
-    tag: "Tinvestin",
+    tag: "Tinvestin Gayrimenkul",
     color: "bg-zeytin/10 text-zeytin border-zeytin/20",
     iconBg: "bg-zeytin/10 text-zeytin",
   },
@@ -106,7 +106,7 @@ export default function Services() {
               <div className={`absolute top-0 left-0 right-0 h-0.5 ${
                 service.tag === "Ana Hizmet"
                   ? "bg-gradient-to-r from-ege/40 via-ege to-ege/40"
-                  : service.tag === "Tinvestin"
+                  : service.tag === "Tinvestin Gayrimenkul"
                   ? "bg-gradient-to-r from-zeytin/40 via-zeytin to-zeytin/40"
                   : "bg-gradient-to-r from-terracotta/40 via-terracotta to-terracotta/40"
               }`} />
