@@ -3,12 +3,10 @@
  *
  * KAYNAK: Abdulzahir/bilgi/FIRMA_BILGI_KARTI.md. Buraya yalnız teyitli bilgi girer.
  *
- * NAP (ad/adres/telefon) karttakiyle BİREBİR (2026-09-27 denetimi): legalName,
- * adres, iki telefon, e-posta, VKN aynıydı; tek fark `name` idi → kartın "Ticari ad"ına
- * çekildi. Sitede görünen marka adı (başlık, OG, üst menü) `alternateName`'de.
- * ⚠️ TEYİT GEREKLİ: kart "Cihan Tintin İnşaat & Mühendislik", site "Cihan Tintin
- * Mimarlık Mühendislik" diyor. GBP'deki ad hangisiyse kart + site ona göre tek ada
- * çekilmeli; o gün `name` ve `alternateName` de güncellenir.
+ * NAP (ad/adres/telefon) karttakiyle BİREBİR: legalName, adres, iki telefon, e-posta, VKN.
+ * Ad kararı (2026-09-28, kullanıcı): tek ad "Cihan Tintin Mimarlık Mühendislik" — sitenin
+ * başlığı/OG/menüsüyle aynı; kartın eski "İnşaat & Mühendislik" adı kullanılmaz. Ad değişirse
+ * önce FIRMA_BILGI_KARTI, sonra burası ve layout.tsx birlikte güncellenir.
  *
  * BİLİNÇLİ OLARAK YOK (eklemeden önce oku):
  * - aggregateRating / review  → gerçek, doğrulanabilir yorum yok. Uydurma puan
@@ -26,8 +24,7 @@ const firma = {
   "@context": "https://schema.org",
   "@type": "GeneralContractor",
   "@id": `${SITE}/#firma`,
-  name: "Cihan Tintin İnşaat & Mühendislik",
-  alternateName: "Cihan Tintin Mimarlık Mühendislik",
+  name: "Cihan Tintin Mimarlık Mühendislik",
   legalName:
     "CİHAN TİNTİN MİMARLIK MÜHENDİSLİK GAYRİMENKUL İNŞAAT SANAYİ VE TİCARET LİMİTED ŞİRKETİ",
   url: SITE,
