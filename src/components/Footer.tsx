@@ -38,11 +38,11 @@ export default function Footer() {
               <span className="font-bold text-xl tracking-tight">Cihan Tintin</span>
               <br />
               <span className="text-xs font-medium tracking-wider uppercase text-white/50">
-                Mimarlık · Mühendislik · Gayrimenkul
+                İnşaat · Mühendislik · Gayrimenkul
               </span>
             </div>
             <p className="text-white/55 text-sm leading-relaxed mb-5 max-w-xs">
-              Mimarlık, mühendislik ve gayrimenkul hizmetleri tek muhataptan.
+              İnşaat, mühendislik ve gayrimenkul hizmetleri tek muhataptan.
               Vekâletnamenizi bırakın; arsadan anahtar teslimine kadar tek bir
               muhatapla ilerleyin, inşaatınızı 7/24 canlı kameradan kendiniz izleyin.
             </p>

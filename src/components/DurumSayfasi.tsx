@@ -43,7 +43,7 @@ export default function DurumSayfasi({
         <Link href="/" className="mb-16 inline-flex flex-col leading-tight">
           <span className="text-lg font-bold tracking-tight text-white">Cihan Tintin</span>
           <span className="text-xs font-medium uppercase tracking-wider text-white/80">
-            Mimarlık · Mühendislik
+            İnşaat · Mühendislik
           </span>
         </Link>
 

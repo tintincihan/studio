@@ -12,7 +12,7 @@ const jakarta = Plus_Jakarta_Sans({
 export const metadata: Metadata = {
   metadataBase: new URL("https://cihantintin.com"),
   alternates: { canonical: "/" },
-  title: "Cihan Tintin Mimarlık Mühendislik | Çanakkale Villa İnşaatı & Ruhsat — Tek Muhatap",
+  title: "Cihan Tintin İnşaat Mühendislik | Çanakkale Villa İnşaatı & Ruhsat — Tek Muhatap",
   description:
     "Çanakkale Ege kıyısında (Dardanos, Assos, Geyikli) villa inşaatı ve yapı ruhsatı. 6 mühendislik disiplini tek muhataptan, vekaletname sistemiyle tam süreç yönetimi. İl Özel İdaresi deneyimi. Ücretsiz keşif görüşmesi alın.",
   keywords: [
@@ -28,15 +28,15 @@ export const metadata: Metadata = {
     "İl Özel İdaresi ruhsat",
   ],
   openGraph: {
-    title: "Cihan Tintin Mimarlık — Vekaletnameyi Verin, Gerisini Biz Halledelim",
+    title: "Cihan Tintin İnşaat Mühendislik — Vekaletnameyi Verin, Gerisini Biz Halledelim",
     description:
       "Çanakkale kıyısında villa inşaatı, ruhsat, kentsel dönüşüm. 6 mühendislik disiplini tek muhataptan. İl Özel İdaresi deneyimi. Ücretsiz görüşme alın.",
     locale: "tr_TR",
     type: "website",
     url: "https://cihantintin.com",
-    siteName: "Cihan Tintin Mimarlık Mühendislik",
+    siteName: "Cihan Tintin İnşaat Mühendislik",
     // üretim: Abdulzahir/araclar/og_gorsel_uret.py
-    images: [{ url: "/og.png", width: 1200, height: 630, alt: "Cihan Tintin Mimarlık Mühendislik — Çanakkale" }],
+    images: [{ url: "/og.png", width: 1200, height: 630, alt: "Cihan Tintin İnşaat Mühendislik — Çanakkale" }],
   },
   twitter: { card: "summary_large_image", images: ["/og.png"] },
   // Google Search Console: cihantintin@gmail.com hesabı, HTML DOSYASI yöntemiyle doğrulandı

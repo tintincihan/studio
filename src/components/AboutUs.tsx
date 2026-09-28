@@ -31,8 +31,8 @@ const timeline = [
   },
   {
     year: "2024+",
-    title: "Cihan Tintin Mimarlık & Tinvestin",
-    desc: "Mimarlık Mühendislik ofisi ve Tinvestin Gayrimenkul markası altında tam ekosistem hizmeti.",
+    title: "Cihan Tintin İnşaat Mühendislik & Tinvestin",
+    desc: "Proje, ruhsat ve inşaat ofisi ile Tinvestin Gayrimenkul markası altında tam ekosistem hizmeti.",
   },
 ];
 

@@ -7,7 +7,7 @@ import DurumSayfasi, { birincilDugme, ikincilDugme } from "@/components/DurumSay
  * sayfaya kendiliğinden `noindex` ekler; arama motoru bu sayfayı dizine almaz.
  */
 export const metadata: Metadata = {
-  title: "Sayfa bulunamadı | Cihan Tintin Mimarlık Mühendislik",
+  title: "Sayfa bulunamadı | Cihan Tintin İnşaat Mühendislik",
 };
 
 export default function NotFound() {

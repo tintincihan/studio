@@ -15,9 +15,9 @@ import Footer from "@/components/Footer";
  * arka ucu veya çerez eklendiği anda bu sayfa YANLIŞ olur.
  */
 export const metadata: Metadata = {
-  title: "Gizlilik ve KVKK Aydınlatma Metni | Cihan Tintin Mimarlık Mühendislik",
+  title: "Gizlilik ve KVKK Aydınlatma Metni | Cihan Tintin İnşaat Mühendislik",
   description:
-    "Cihan Tintin Mimarlık Mühendislik olarak kişisel verilerinizi nasıl işlediğimize dair KVKK aydınlatma metni.",
+    "Cihan Tintin İnşaat Mühendislik olarak kişisel verilerinizi nasıl işlediğimize dair KVKK aydınlatma metni.",
   robots: { index: true, follow: true },
   alternates: { canonical: "/gizlilik" },
 };

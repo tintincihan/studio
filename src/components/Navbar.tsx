@@ -48,7 +48,7 @@ export default function Navbar() {
                 scrolled ? "text-ege" : "text-white/80"
               }`}
             >
-              Mimarlık · Mühendislik
+              İnşaat · Mühendislik
             </span>
           </a>
 

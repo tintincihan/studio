@@ -4,8 +4,8 @@
  * KAYNAK: Abdulzahir/bilgi/FIRMA_BILGI_KARTI.md. Buraya yalnız teyitli bilgi girer.
  *
  * NAP (ad/adres/telefon) karttakiyle BİREBİR: legalName, adres, iki telefon, e-posta, VKN.
- * Ad kararı (2026-09-28, kullanıcı): tek ad "Cihan Tintin Mimarlık Mühendislik" — sitenin
- * başlığı/OG/menüsüyle aynı; kartın eski "İnşaat & Mühendislik" adı kullanılmaz. Ad değişirse
+ * Ad kararı (2026-09-28 akşam, kullanıcı): kısa ad "Cihan Tintin İnşaat Mühendislik", legalName tam unvan — sitenin
+ * başlığı/OG/menüsüyle aynı; eski "Mimarlık Mühendislik" / "İnşaat & Mühendislik" kısa adları kullanılmaz. Ad değişirse
  * önce FIRMA_BILGI_KARTI, sonra burası ve layout.tsx birlikte güncellenir.
  *
  * BİLİNÇLİ OLARAK YOK (eklemeden önce oku):
@@ -24,7 +24,7 @@ const firma = {
   "@context": "https://schema.org",
   "@type": "GeneralContractor",
   "@id": `${SITE}/#firma`,
-  name: "Cihan Tintin Mimarlık Mühendislik",
+  name: "Cihan Tintin İnşaat Mühendislik",
   legalName:
     "CİHAN TİNTİN MİMARLIK MÜHENDİSLİK GAYRİMENKUL İNŞAAT SANAYİ VE TİCARET LİMİTED ŞİRKETİ",
   url: SITE,
@@ -78,7 +78,7 @@ const site = {
   "@type": "WebSite",
   "@id": `${SITE}/#site`,
   url: SITE,
-  name: "Cihan Tintin Mimarlık Mühendislik",
+  name: "Cihan Tintin İnşaat Mühendislik",
   inLanguage: "tr-TR",
   publisher: { "@id": `${SITE}/#firma` },
 };
