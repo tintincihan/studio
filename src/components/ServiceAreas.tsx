@@ -53,6 +53,14 @@ const areas = [
     dot: "bg-terracotta",
   },
   {
+    name: "Lapseki",
+    tag: "Boğaz kıyısı",
+    desc: "Umurbey, Kemiklialan ve çevre köylerde belediye ve İl Özel İdaresi ruhsat süreçleri.",
+    color: "from-zeytin/10 to-zeytin/5",
+    accent: "text-zeytin",
+    dot: "bg-zeytin",
+  },
+  {
     name: "Çanakkale Merkez",
     tag: "Kentsel yoğunluk",
     desc: "Kentsel dönüşüm ve ruhsat projeleri için en hareketli bölge.",

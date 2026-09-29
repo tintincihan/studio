@@ -12,7 +12,6 @@
  * - aggregateRating / review  → gerçek, doğrulanabilir yorum yok. Uydurma puan
  *   Google'ın yapılandırılmış veri politikasını ihlal eder ve manuel işlem getirir.
  * - priceRange                → fiyat/oran dışa dönük yazılmaz (ABDULZAHIR değişmezi #1).
- * - openingHoursSpecification → çalışma saatleri teyit edilmedi (GBP'de de eksik).
  * - geo (enlem/boylam)        → ölçülmedi; tahmini koordinat yazılmaz.
  * - sameAs                    → GBP/Instagram/LinkedIn adresleri henüz teyitli değil.
  * - FAQPage                   → sayfada görünen SSS yok; görünmeyen içerik için şema yazılmaz.
@@ -46,7 +45,23 @@ const firma = {
     "Ezine",
     "Ayvacık",
     "Assos–Behramkale",
+    "Lapseki",
   ].map((ad) => ({ "@type": "Place", name: ad })),
+  // Kullanıcı teyidi 2026-09-29 — GBP ve Yandex'teki saatlerle aynı.
+  openingHoursSpecification: [
+    {
+      "@type": "OpeningHoursSpecification",
+      dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+      opens: "08:00",
+      closes: "18:00",
+    },
+    {
+      "@type": "OpeningHoursSpecification",
+      dayOfWeek: "Saturday",
+      opens: "08:00",
+      closes: "13:00",
+    },
+  ],
   description:
     "Çanakkale'de konut ve villa yapım işi, yapı ruhsatı (belediye ve İl Özel İdaresi) ve kentsel dönüşüm. Vekâletname ile tek muhatap; altı mühendislik disiplini çözüm ortaklarıyla tek elden; 7/24 canlı şantiye kamerası.",
   knowsAbout: [

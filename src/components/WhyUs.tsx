@@ -47,7 +47,7 @@ const reasons = [
   {
     n: "05",
     title: "Kıyı Şeridinin Kendine Has Kuralları",
-    desc: "Dardanos, Güzelyalı, Geyikli, Assos–Behramkale, Ezine, Ayvacık. Her birinin kendi imar durumu, zemini ve ruhsat mercii var — kimi belediyede, kimi İl Özel İdaresi'nde. Bu ayrımı başında bilmek, dosyanın kaç ay süreceğini belirler.",
+    desc: "Dardanos, Güzelyalı, Geyikli, Assos–Behramkale, Ezine, Ayvacık, Lapseki. Her birinin kendi imar durumu, zemini ve ruhsat mercii var — kimi belediyede, kimi İl Özel İdaresi'nde. Bu ayrımı başında bilmek, dosyanın kaç ay süreceğini belirler.",
     icon: (
       <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
