@@ -19,6 +19,9 @@
   function menu(ac) { if (!nav || !bur) return; nav.classList.toggle('menu-open', ac); bur.classList.toggle('active', ac);
     document.documentElement.classList.toggle('nav-open', ac); bur.setAttribute('aria-expanded', String(ac));
     bur.setAttribute('aria-label', ac ? 'Menüyü kapat' : 'Menüyü aç'); }
+  // sayfa kaydırılınca menünün bulanık koyu zemini açılır (.nav.stuck — asıl Kage betiğiyle birlikte düşmüştü; 2026-10-15)
+  function zemin() { if (nav) nav.classList.toggle('stuck', scrollY > 24); }
+  addEventListener('scroll', zemin, { passive: true }); zemin();
   if (bur) bur.addEventListener('click', function (e) { e.stopPropagation(); menu(!nav.classList.contains('menu-open')); });
   kok.querySelectorAll('.nav-links a').forEach(function (a) { a.addEventListener('click', function () { menu(false); }); });
   addEventListener('keydown', function (e) { if (e.key === 'Escape') menu(false); });
