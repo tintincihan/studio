@@ -7,6 +7,7 @@ import type { NextConfig } from "next";
  * - Betik, stil, yazı tipi, favicon: yalnız aynı kaynak (/_next/static/…).
  *   Yazı tipi next/font ile derlemede indirilip kendi sunucumuzdan verilir;
  *   tarayıcı Google Fonts'a gitmez.
+ *   Ana sayfa (2026-10-15) Onest'i /kage-seo/fonts.css içinden data: URI ile yükler → font-src data:.
  * - Satır içi <script>'ler (Next RSC verisi `self.__next_f.push` + 2 JSON-LD)
  *   → script-src 'unsafe-inline'. Nonce yolu seçilmedi: Next 16 belgesine göre
  *   nonce, TÜM sayfaları dinamik render'a zorlar (statik önbellek kaybolur).
@@ -36,7 +37,8 @@ const icerikGuvenligi = [
   `script-src 'self' 'unsafe-inline'${gelistirme ? " 'unsafe-eval'" : ""}`,
   "style-src 'self' 'unsafe-inline'",
   "img-src 'self' data:",
-  "font-src 'self'",
+  // 2026-10-15: ana sayfanın Onest yazı tipi /kage-seo/fonts.css içinde data: URI olarak gömülü (dış kaynak yok)
+  "font-src 'self' data:",
   "connect-src 'self'",
   "object-src 'none'",
   "base-uri 'self'",

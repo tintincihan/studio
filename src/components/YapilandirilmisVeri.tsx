@@ -13,8 +13,9 @@
  *   Google'ın yapılandırılmış veri politikasını ihlal eder ve manuel işlem getirir.
  * - priceRange                → fiyat/oran dışa dönük yazılmaz (ABDULZAHIR değişmezi #1).
  * - geo (enlem/boylam)        → ölçülmedi; tahmini koordinat yazılmaz.
- * - sameAs                    → GBP/Instagram/LinkedIn adresleri henüz teyitli değil.
- * - FAQPage                   → sayfada görünen SSS yok; görünmeyen içerik için şema yazılmaz.
+ * - sameAs (eksik kalanlar)   → Meta/Facebook, YouTube, LinkedIn henüz yok (kullanıcı 2026-10-15: "sonra bakacağız").
+ *                               Teyitli olanlar aşağıda — kullanıcı verdi, açıldığı doğrulandı (2026-10-15).
+ * - FAQPage                   → burada değil: ana sayfanın kendisi (src/app/page.tsx) görünen SSS'yle birlikte basar.
  * - Biga, Gelibolu, Çan       → hizmet bölgesi DEĞİL, areaServed'e girmez.
  */
 const SITE = "https://cihantintin.com";
@@ -27,6 +28,12 @@ const firma = {
   legalName:
     "CİHAN TİNTİN MİMARLIK MÜHENDİSLİK GAYRİMENKUL İNŞAAT SANAYİ VE TİCARET LİMİTED ŞİRKETİ",
   url: SITE,
+  // Google İşletme Profili (cid = kullanıcının verdiği paylaşım linkinin çözüldüğü kayıt), Yandex, Instagram — 2026-10-15
+  sameAs: [
+    "https://www.google.com/maps?cid=7710785214648308947",
+    "https://yandex.com.tr/maps/org/cihan_tintin_insaat_muhendislik/72854076554",
+    "https://www.instagram.com/cihantintin/",
+  ],
   telephone: ["+90-286-212-68-78", "+90-532-634-86-64"],
   email: "cihantintin@gmail.com",
   taxID: "6311332207",

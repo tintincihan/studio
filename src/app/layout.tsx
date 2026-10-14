@@ -14,7 +14,8 @@ export const metadata: Metadata = {
   alternates: { canonical: "/" },
   title: "Cihan Tintin İnşaat & Mühendislik | Çanakkale Villa İnşaatı & Ruhsat — Tek Muhatap",
   description:
-    "Çanakkale Ege kıyısında (Dardanos, Assos, Geyikli) villa inşaatı ve yapı ruhsatı. 6 mühendislik disiplini tek muhataptan, vekaletname sistemiyle tam süreç yönetimi. İl Özel İdaresi deneyimi. Ücretsiz keşif görüşmesi alın.",
+    // 2026-10-15: ücret/süre çağrışımı yok (kullanıcı kararı 13.10)
+    "Çanakkale Ege kıyısında (Dardanos, Assos, Geyikli) villa inşaatı ve yapı ruhsatı. 6 mühendislik disiplini tek muhataptan, vekaletname sistemiyle tam süreç yönetimi. İl Özel İdaresi deneyimi.",
   keywords: [
     "Çanakkale villa inşaatı",
     "yapı ruhsat projesi Çanakkale",
@@ -30,7 +31,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Cihan Tintin İnşaat & Mühendislik — Vekaletnameyi Verin, Gerisini Biz Halledelim",
     description:
-      "Çanakkale kıyısında villa inşaatı, ruhsat, kentsel dönüşüm. 6 mühendislik disiplini tek muhataptan. İl Özel İdaresi deneyimi. Ücretsiz görüşme alın.",
+      "Çanakkale kıyısında villa inşaatı, ruhsat, kentsel dönüşüm. 6 mühendislik disiplini tek muhataptan. İl Özel İdaresi deneyimi.",
     locale: "tr_TR",
     type: "website",
     url: "https://cihantintin.com",
