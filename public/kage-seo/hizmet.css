@@ -1,0 +1,39 @@
+/* Hizmet sayfaları — ana sayfanın koyu teması (villa_sayfa.py üretir). Yazı tipi Onest (fonts.css, OFL). */
+.hizmet-kok{ --zemin:#05070a; --metin:#e8ece9; --soluk:#9aa5a0; --cizgi:rgba(255,255,255,.10); --amber:#F2B33D;
+  background:var(--zemin); color:var(--metin); font-family:'Onest',system-ui,sans-serif; min-height:100vh; line-height:1.65; }
+.hizmet-kok a{ color:#F6D58E; }
+.hizmet-kok .h-ust{ display:flex; justify-content:space-between; align-items:center; gap:16px; flex-wrap:wrap;
+  padding:20px clamp(16px,4vw,48px); border-bottom:1px solid var(--cizgi); }
+.hizmet-kok .marka{ color:var(--metin); text-decoration:none; font-weight:600; letter-spacing:.12em; text-transform:uppercase; font-size:14px; }
+.hizmet-kok .marka span{ color:var(--soluk); font-weight:400; letter-spacing:.08em; margin-left:6px; }
+.hizmet-kok .h-ust nav a{ color:var(--soluk); text-decoration:none; font-size:13px; margin-left:20px; letter-spacing:.06em; }
+.hizmet-kok .kirinti{ max-width:760px; margin:24px auto 0; padding:0 16px; font-size:13px; color:var(--soluk); }
+.hizmet-kok .kirinti a{ color:var(--soluk); }
+.hizmet-kok .h-icerik{ max-width:760px; margin:0 auto; padding:8px 16px 64px; }
+.hizmet-kok h1{ font-size:clamp(28px,5vw,44px); line-height:1.15; margin:24px 0 20px; font-weight:600; }
+.hizmet-kok h2{ font-size:clamp(20px,3vw,26px); margin:48px 0 14px; font-weight:600; border-top:1px solid var(--cizgi); padding-top:28px; }
+.hizmet-kok p, .hizmet-kok li{ font-size:17px; color:#d6ddd9; }
+.hizmet-kok strong{ color:var(--metin); }
+.hizmet-kok ol, .hizmet-kok ul{ padding-left:22px; }
+.hizmet-kok li{ margin:8px 0; }
+.hizmet-kok .galeri{ display:grid; grid-template-columns:1fr 1fr; gap:12px; margin:20px 0; }
+.hizmet-kok figure{ margin:0; }
+.hizmet-kok figure img{ width:100%; height:auto; border-radius:6px; display:block; }
+.hizmet-kok figcaption{ font-size:13px; color:var(--soluk); margin-top:6px; }
+.hizmet-kok details.sss{ border-bottom:1px solid var(--cizgi); padding:14px 0; }
+.hizmet-kok details.sss summary{ cursor:pointer; list-style:none; }
+.hizmet-kok details.sss summary::-webkit-details-marker{ display:none; }
+.hizmet-kok details.sss h3{ display:inline; font-size:18px; font-weight:600; color:var(--metin); }
+.hizmet-kok details.sss summary::after{ content:"+"; float:right; color:var(--amber); font-size:20px; }
+.hizmet-kok details.sss[open] summary::after{ content:"–"; }
+.hizmet-kok .h-cta{ display:flex; flex-wrap:wrap; gap:12px; margin:28px 0 8px; }
+.hizmet-kok .btn-ana, .hizmet-kok .btn-ikinci{ display:inline-block; padding:13px 22px; border-radius:999px; text-decoration:none; font-weight:600; font-size:15px; }
+.hizmet-kok .btn-ana{ background:var(--amber); color:#1F1606; }
+.hizmet-kok .btn-ikinci{ background:rgba(242,179,61,.10); border:1px solid rgba(242,179,61,.65); color:#F6D58E; }
+.hizmet-kok .guncel{ font-size:13px; color:var(--soluk); margin-top:24px; }
+.hizmet-kok .h-alt{ border-top:1px solid var(--cizgi); padding:28px 16px 90px; text-align:center; font-size:13px; color:var(--soluk); }
+.hizmet-kok .h-alt p, .hizmet-kok .h-alt address{ font-size:13px; color:var(--soluk); font-style:normal; margin:6px 0; }
+.hizmet-kok .wa-fab{ position:fixed; right:18px; bottom:18px; background:#25D366; color:#fff; text-decoration:none; font-weight:600;
+  padding:12px 18px; border-radius:999px; box-shadow:0 6px 20px rgba(0,0,0,.35); font-size:14px; }
+.hizmet-kok :focus-visible{ outline:2px solid var(--amber); outline-offset:3px; }
+@media (max-width:600px){ .hizmet-kok .galeri{ grid-template-columns:1fr; } .hizmet-kok .h-ust nav a{ margin-left:0; margin-right:16px; } }
