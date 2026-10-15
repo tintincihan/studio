@@ -23,8 +23,14 @@ const SITE = "https://cihantintin.com";
 
 const firma = {
   "@context": "https://schema.org",
-  "@type": "GeneralContractor",
+  // 2026-10-15: "Organization" de yazılır — bazı AI hazırlık tarayıcıları (MessGEO) GeneralContractor alt türünü
+  // kuruluş saymıyor; GeneralContractor ⊂ LocalBusiness ⊂ Organization olduğundan anlam değişmez.
+  "@type": ["GeneralContractor", "Organization"],
   "@id": `${SITE}/#firma`,
+  // logo: firmanın kendi logosu (00 Şirket Evrakları/02 Logo/MİMAR.png → public/logo.png, 1248x528)
+  logo: { "@type": "ImageObject", url: `${SITE}/logo.png`, width: 1248, height: 528 },
+  // image: tamamlanmış iş (Uluköy, Ezine — kullanım izni kullanıcıda, 15.10) + paylaşım görseli
+  image: [`${SITE}/kage-seo/foto/kart-3-teslim.webp`, `${SITE}/og.png`],
   name: "Cihan Tintin İnşaat & Mühendislik",
   legalName:
     "CİHAN TİNTİN MİMARLIK MÜHENDİSLİK GAYRİMENKUL İNŞAAT SANAYİ VE TİCARET LİMİTED ŞİRKETİ",
