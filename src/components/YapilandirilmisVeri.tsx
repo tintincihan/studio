@@ -16,7 +16,8 @@
  * - sameAs (eksik kalanlar)   → Meta/Facebook, YouTube, LinkedIn henüz yok (kullanıcı 2026-10-15: "sonra bakacağız").
  *                               Teyitli olanlar aşağıda — kullanıcı verdi, açıldığı doğrulandı (2026-10-15).
  * - FAQPage                   → burada değil: ana sayfanın kendisi (src/app/page.tsx) görünen SSS'yle birlikte basar.
- * - Biga, Gelibolu, Çan       → hizmet bölgesi DEĞİL, areaServed'e girmez.
+ * - areaServed (2026-10-15)   → kart "Hizmet BÖLGESİ": proje/ruhsat Çanakkale'nin tüm ilçeleri (il + 12 ilçe);
+ *                               inşaat Çardak–Küçükkuyu kıyı bandı + 30 km — bant metinde/llms.txt'te anlatılır.
  */
 const SITE = "https://cihantintin.com";
 
@@ -44,16 +45,18 @@ const firma = {
     addressRegion: "Çanakkale",
     addressCountry: "TR",
   },
+  // Proje/ruhsat il geneli (kullanıcı kararı 2026-10-15); inşaat kıyı bandı ayrımı açıklama metninde
   areaServed: [
-    "Çanakkale Merkez",
-    "Dardanos",
-    "Güzelyalı",
-    "Geyikli",
-    "Ezine",
-    "Ayvacık",
-    "Assos–Behramkale",
-    "Lapseki",
-  ].map((ad) => ({ "@type": "Place", name: ad })),
+    { "@type": "AdministrativeArea", name: "Çanakkale" },
+    ...[
+      "Çanakkale Merkez", "Ayvacık", "Bayramiç", "Biga", "Bozcaada", "Çan",
+      "Eceabat", "Ezine", "Gelibolu", "Gökçeada", "Lapseki", "Yenice",
+    ].map((ad) => ({ "@type": "AdministrativeArea", name: ad })),
+    ...["Dardanos", "Güzelyalı", "Geyikli", "Assos–Behramkale", "Küçükkuyu", "Çardak"].map((ad) => ({
+      "@type": "Place",
+      name: ad,
+    })),
+  ],
   // Kullanıcı teyidi 2026-09-29 — GBP ve Yandex'teki saatlerle aynı.
   openingHoursSpecification: [
     {

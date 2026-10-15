@@ -12,7 +12,12 @@
 - Gayrimenkul işleri ayrı marka Tinvestin Gayrimenkul ile yürür.
 
 ## Hizmet bölgeleri
-Çanakkale Merkez, Dardanos, Güzelyalı, Geyikli, Ezine, Ayvacık, Assos–Behramkale, Lapseki.
+- Proje ve ruhsat: Çanakkale'nin tüm ilçe ve köyleri — Merkez, Ayvacık, Bayramiç, Biga, Bozcaada, Çan, Eceabat, Ezine,
+  Gelibolu, Gökçeada, Lapseki, Yenice.
+- İnşaat (yapım, anahtar teslim): Lapseki Çardak'tan Ayvacık Küçükkuyu'ya uzanan kıyı şeridi ve kıyıdan 30 km içeride —
+  Çardak, Lapseki, Umurbey, Çanakkale Merkez, Kepez, Güzelyalı, Dardanos, Kumkale, Ezine, Geyikli, Odunluk, Gülpınar,
+  Babakale, Ayvacık, Assos–Behramkale, Küçükkuyu.
+- Anahtar teslim: inşaattaki işlerin tamamı (kaba, ince, elektrik ve mekanik tesisat) ve peyzaj.
 
 ## Belgelenebilir bilgiler
 - Kurucu, Çanakkale İl Özel İdaresi imar biriminde 5 yıl görev yaptı.
