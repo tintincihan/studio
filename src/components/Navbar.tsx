@@ -35,21 +35,17 @@ export default function Navbar() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16 lg:h-20">
           {/* Logo */}
-          <a href="#" className="flex flex-col leading-tight">
-            <span
-              className={`font-bold text-lg tracking-tight transition-colors ${
-                scrolled ? "text-deniz" : "text-white"
-              }`}
-            >
-              Cihan Tintin
-            </span>
-            <span
-              className={`text-xs font-medium tracking-wider uppercase transition-colors ${
-                scrolled ? "text-ege" : "text-white/80"
-              }`}
-            >
-              İnşaat · Mühendislik
-            </span>
+          {/* kurumsal kimlik 2026 (Abdulzahir/marka/kimlik-2026): beyaz menüde renkli, koyu kahraman görseli üstünde koyu-zemin */}
+          <a href="#" className="flex items-center" aria-label="Cihan Tintin İnşaat & Mühendislik — ana sayfa">
+            {/* her ekranda sloganlı yatay logo (kullanıcı kararı): telefonda 230 px (slogan ≥ 6 px), ≥768 px 300 px */}
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              src={scrolled ? "/marka/logo-yatay-renkli.svg" : "/marka/logo-yatay-koyu-zemin.svg"}
+              alt="Cihan Tintin İnşaat & Mühendislik"
+              width={300}
+              height={68}
+              className="h-[52px] md:h-[68px] w-auto"
+            />
           </a>
 
           {/* Desktop Nav */}

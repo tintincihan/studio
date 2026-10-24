@@ -27,8 +27,8 @@ const firma = {
   // kuruluş saymıyor; GeneralContractor ⊂ LocalBusiness ⊂ Organization olduğundan anlam değişmez.
   "@type": ["GeneralContractor", "Organization"],
   "@id": `${SITE}/#firma`,
-  // logo: firmanın kendi logosu (00 Şirket Evrakları/02 Logo/MİMAR.png → public/logo.png, 1248x528)
-  logo: { "@type": "ImageObject", url: `${SITE}/logo.png`, width: 1248, height: 528 },
+  // logo: kurumsal kimlik 2026 sembolü beyaz zeminde (marka/kimlik-2026/4-sosyal/profil-beyaz-720.png → public/logo.png)
+  logo: { "@type": "ImageObject", url: `${SITE}/logo.png`, width: 720, height: 720 },
   // image: tamamlanmış iş (Uluköy, Ezine — kullanım izni kullanıcıda, 15.10) + paylaşım görseli
   image: [`${SITE}/kage-seo/foto/kart-3-teslim.webp`, `${SITE}/og.png`],
   name: "Cihan Tintin İnşaat & Mühendislik",
