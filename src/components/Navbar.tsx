@@ -1,14 +1,16 @@
 "use client";
 
 import { useState, useEffect } from "react";
+import Link from "next/link";
 import { motion, AnimatePresence } from "framer-motion";
 
 const navLinks = [
-  { label: "Hakkımızda", href: "#hakkimizda" },
-  { label: "Hizmetler", href: "#hizmetler" },
-  { label: "Nasıl Çalışırız", href: "#surec" },
-  { label: "Bölgeler", href: "#bolgeler" },
-  { label: "Neden Biz", href: "#neden-biz" },
+  // Navbar yalnız alt sayfalarda (gizlilik) kullanılır → bağlantılar ana sayfanın bölümlerine gider
+  { label: "Hakkımızda", href: "/#hakkimizda" },
+  { label: "Hizmetler", href: "/#hizmetler" },
+  { label: "Nasıl Çalışırız", href: "/#surec" },
+  { label: "Bölgeler", href: "/#bolgeler" },
+  { label: "Neden Biz", href: "/#neden-biz" },
 ];
 
 export default function Navbar() {
@@ -27,26 +29,27 @@ export default function Navbar() {
       animate={{ y: 0, opacity: 1 }}
       transition={{ duration: 0.5, ease: "easeOut" }}
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
+        // açık zeminli sayfada saydam menü beyaz logoyu/bağlantıları görünmez kılıyordu (2026-10-27) → hep beyaz zemin
         scrolled
           ? "bg-white/95 backdrop-blur-md shadow-sm"
-          : "bg-transparent"
+          : "bg-white/95 backdrop-blur-md"
       }`}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16 lg:h-20">
           {/* Logo */}
-          {/* kurumsal kimlik 2026 (Abdulzahir/marka/kimlik-2026): beyaz menüde renkli, koyu kahraman görseli üstünde koyu-zemin */}
-          <a href="#" className="flex items-center" aria-label="Cihan Tintin İnşaat & Mühendislik — ana sayfa">
+          {/* kurumsal kimlik 2026 (Abdulzahir/marka/kimlik-2026): menü hep beyaz zeminli → renkli logo */}
+          <Link href="/" className="flex items-center" aria-label="Cihan Tintin İnşaat & Mühendislik — ana sayfa">
             {/* her ekranda sloganlı yatay logo (kullanıcı kararı): telefonda 230 px (slogan ≥ 6 px), ≥768 px 300 px */}
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img
-              src={scrolled ? "/marka/logo-yatay-renkli.svg" : "/marka/logo-yatay-koyu-zemin.svg"}
+              src="/marka/logo-yatay-renkli.svg"
               alt="Cihan Tintin İnşaat & Mühendislik"
               width={300}
               height={68}
               className="h-[52px] md:h-[68px] w-auto"
             />
-          </a>
+          </Link>
 
           {/* Desktop Nav */}
           <nav className="hidden lg:flex items-center gap-8">
@@ -54,9 +57,7 @@ export default function Navbar() {
               <a
                 key={link.href}
                 href={link.href}
-                className={`text-sm font-medium transition-colors hover:text-[#A84B33] ${
-                  scrolled ? "text-metin" : "text-white/90"
-                }`}
+                className={"text-sm font-medium transition-colors hover:text-[#A84B33] text-metin"}
               >
                 {link.label}
               </a>
@@ -81,9 +82,7 @@ export default function Navbar() {
           {/* Mobile hamburger */}
           <button
             onClick={() => setMenuOpen(!menuOpen)}
-            className={`lg:hidden p-2 rounded-md transition-colors ${
-              scrolled ? "text-metin" : "text-white"
-            }`}
+            className="lg:hidden p-2 rounded-md transition-colors text-metin"
             aria-label="Menü"
           >
             <div className="w-5 flex flex-col gap-1">
