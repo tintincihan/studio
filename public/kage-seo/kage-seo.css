@@ -909,8 +909,6 @@ h1,h2,h3{ font-weight:400; margin:0; letter-spacing:-.005em; }
   border:1px solid rgba(223,231,224,.32); color:var(--bone); font-size:13px; letter-spacing:.04em; text-decoration:none;
   background:rgba(8,12,15,.42); backdrop-filter:blur(6px); transition:background .3s var(--ease), border-color .3s; }
 .btn:hover{ background:rgba(223,231,224,.12); border-color:rgba(223,231,224,.6); }
-.btn--ana{ background:#E07A5F; border-color:#E07A5F; color:#fff; font-weight:600; }
-.btn--ana:hover{ background:#c9664d; border-color:#c9664d; }
 .chip .tx b{ max-width:150px; }
 .mini{ font-size:11px; letter-spacing:.24em; text-transform:uppercase; color:var(--muted); margin:0 0 18px; font-weight:500; }
 .zaman{ border-left:1px solid var(--line); padding-left:22px; }

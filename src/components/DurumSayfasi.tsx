@@ -12,7 +12,7 @@ import type { ReactNode } from "react";
  * (mesaj, digest, yığın) ekrana yazılmaz.
  */
 export const birincilDugme =
-  "inline-flex items-center justify-center gap-2 rounded-full bg-terracotta px-8 py-4 font-semibold text-white shadow-lg transition-colors hover:bg-terracotta-dark";
+  "inline-flex items-center justify-center gap-2 rounded-full bg-[#F2B33D] px-8 py-4 font-semibold text-[#1F1606] shadow-lg transition-colors hover:bg-[#F7C766]";
 
 export const ikincilDugme =
   "inline-flex items-center justify-center gap-2 rounded-full border border-white/30 bg-white/10 px-8 py-4 font-semibold text-white transition-colors hover:bg-white/20";

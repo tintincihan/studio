@@ -45,7 +45,7 @@ export default function GizlilikPage() {
       <Navbar />
       <main className="bg-kumsal">
         <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 py-16 lg:py-24">
-          <p className="text-sm font-semibold text-terracotta uppercase tracking-wide mb-3">
+          <p className="text-sm font-semibold text-[#A84B33] uppercase tracking-wide mb-3">
             Yasal Bilgilendirme
           </p>
           <h1 className="text-3xl lg:text-4xl font-extrabold text-deniz mb-3">
