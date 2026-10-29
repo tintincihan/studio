@@ -3,10 +3,11 @@ import { GOVDE, SSS_LD } from "./govde";
 
 // Ana sayfa — Abdulzahir/arastirma/kage-deneme/kage_seo.py üretir, yayina_tasi.py taşır; ELLE DÜZENLENMEZ. İçerik sunucu HTML'inde; iframe yok.
 // Firma şeması (GeneralContractor) kök düzende (YapilandirilmisVeri); burada yalnız SSS şeması.
-const BASLIK = "Çanakkale Villa İnşaatı ve Yapı Ruhsatı | Cihan Tintin";
+// 2026-10-30: başlık bizi tanımayanın yazdığı ifadeyle başlar (anahtar kelime seti 30.10)
+const BASLIK = "Çanakkale İnşaat Firması, Müteahhit, Proje ve Ruhsat | Cihan Tintin";
 // 2026-10-15: ücret/süre çağrışımı yok (kullanıcı kararı 13.10) — arama sonucundaki açıklama dahil
 const ACIKLAMA =
-  "Çanakkale'de proje, ruhsat ve inşaat tek muhataptan: 6 mühendislik disiplini, vekaletname ile belediye ve İl Özel İdaresi takibi, 7/24 canlı şantiye kamerası.";
+  "Çanakkale'de inşaat firması ve müteahhit: villa, müstakil ev ve taş ev yapımı, mimari proje ve yapı ruhsatı, kentsel dönüşüm, tadilat. Vekaletname ile tek muhatap, 7/24 canlı şantiye kamerası.";
 export const metadata: Metadata = {
   title: { absolute: BASLIK },
   description: ACIKLAMA,

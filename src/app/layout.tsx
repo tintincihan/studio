@@ -12,11 +12,18 @@ const jakarta = Plus_Jakarta_Sans({
 export const metadata: Metadata = {
   metadataBase: new URL("https://cihantintin.com"),
   alternates: { canonical: "/" },
-  title: "Cihan Tintin İnşaat & Mühendislik | Çanakkale Villa İnşaatı & Ruhsat — Tek Muhatap",
+  // 2026-10-30 (kullanıcı: "bizi tanımayan çanakkale inşaat firması, müteahhit, proje firması diye arar"): başlık ve
+  // açıklama aranan ifadeyle başlar. Kaynak: ajanlar/seo-agent/outputs/2026-10-30_anahtar-kelime-seti.md
+  title: "Çanakkale İnşaat Firması, Müteahhit, Proje ve Ruhsat | Cihan Tintin İnşaat & Mühendislik",
   description:
     // 2026-10-15: ücret/süre çağrışımı yok (kullanıcı kararı 13.10)
-    "Çanakkale Ege kıyısında (Dardanos, Assos, Geyikli) villa inşaatı ve yapı ruhsatı. 6 mühendislik disiplini tek muhataptan, vekaletname sistemiyle tam süreç yönetimi. İl Özel İdaresi deneyimi.",
+    "Çanakkale'de inşaat firması ve müteahhit: villa, müstakil ev ve taş ev yapımı, mimari proje ve yapı ruhsatı, kentsel dönüşüm, tadilat. Proje ve ruhsat tüm ilçelerde; inşaat Çardak'tan Küçükkuyu'ya kıyı şeridinde. Vekaletname ile tek muhatap.",
   keywords: [
+    "Çanakkale inşaat firması",
+    "Çanakkale müteahhit",
+    "Çanakkale mimari proje",
+    "Çanakkale taş ev yapımı",
+    "Çanakkale tadilat",
     "Çanakkale villa inşaatı",
     "yapı ruhsat projesi Çanakkale",
     "kentsel dönüşüm Çanakkale",

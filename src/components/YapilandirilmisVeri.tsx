@@ -13,8 +13,8 @@
  *   Google'ın yapılandırılmış veri politikasını ihlal eder ve manuel işlem getirir.
  * - priceRange                → fiyat/oran dışa dönük yazılmaz (ABDULZAHIR değişmezi #1).
  * - geo (enlem/boylam)        → ölçülmedi; tahmini koordinat yazılmaz.
- * - sameAs (eksik kalanlar)   → Meta/Facebook, YouTube, LinkedIn henüz yok (kullanıcı 2026-10-15: "sonra bakacağız").
- *                               Teyitli olanlar aşağıda — kullanıcı verdi, açıldığı doğrulandı (2026-10-15).
+ * - sameAs (eksik kalanlar)   → LinkedIn henüz yok. Facebook (23.10) ve YouTube (24.10) 2026-10-30'da eklendi —
+ *                               adları canlıda "Cihan Tintin İnşaat & Mühendislik" olarak doğrulandı.
  * - FAQPage                   → burada değil: ana sayfanın kendisi (src/app/page.tsx) görünen SSS'yle birlikte basar.
  * - areaServed (2026-10-15)   → kart "Hizmet BÖLGESİ": proje/ruhsat Çanakkale'nin tüm ilçeleri (il + 12 ilçe);
  *                               inşaat Çardak–Küçükkuyu kıyı bandı + 30 km — bant metinde/llms.txt'te anlatılır.
@@ -40,6 +40,8 @@ const firma = {
     "https://www.google.com/maps?cid=7710785214648308947",
     "https://yandex.com.tr/maps/org/cihan_tintin_insaat_muhendislik/72854076554",
     "https://www.instagram.com/cihantintin/",
+    "https://www.facebook.com/profile.php?id=61595762341444",
+    "https://www.youtube.com/@cihantintin",
   ],
   telephone: ["+90-286-212-68-78", "+90-532-634-86-64"],
   email: "cihantintin@gmail.com",
@@ -92,10 +94,15 @@ const firma = {
   hasOfferCatalog: {
     "@type": "OfferCatalog",
     name: "Hizmetler",
+    // 2026-10-30: GBP hizmet listesiyle hizalandı (kart "Genişletilmiş hizmet listesi" 17.10)
     itemListElement: [
       "Anahtar teslim konut ve villa inşaatı",
+      "Müteahhitlik",
+      "Taş ev yapımı",
+      "Mimari proje",
       "Yapı ruhsatı projesi ve kurum takibi",
       "Kentsel dönüşüm süreç yönetimi",
+      "Tadilat ve yenileme",
       "7/24 canlı şantiye kamerası ile uzaktan takip",
     ].map((ad) => ({
       "@type": "Offer",
